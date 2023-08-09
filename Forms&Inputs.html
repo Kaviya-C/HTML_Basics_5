@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>forms_Inputs</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+        <body>
+          <header>
+            <h2>To Be Followed</h2>
+            <nav aria-label="primary-navigation">
+              <ul>
+                <li>
+                  <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                  <a href="#holiday">Planning Holiday</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact me</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <ol>
+            <li>Learn</li>
+            <li>Practise</li>
+            <li>Analyze</li>
+            <li>Recall</li>
+            <li>Learn again</li>
+            <li>Until i am excel in that things..</li>
+          </ol>
+          <table>
+            <thead>
+              <tr>
+                <th>Language</th>
+                <th>Time</th>
+                <th colspan="2">Practise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>9:00 to 10:00</td>
+                <td>10:00 to 10:30</td>
+                <td>10:40 to 10:50</td>
+              </tr>
+              <tr>
+                <td rowspan="2">CSS</td>
+                <td>11:00 to 12:00</td>
+                <td>10:00 to 10:30</td>
+                <td>10:40 to 10:50</td>
+              </tr>
+              <tr>
+                <td>12:00 to 12:30</td>
+                <td>10:00 to 10:30</td>
+                <td>10:40 to 10:50</td>
+              </tr>
+            </tbody>
+          </table>
+          <section id="sample">
+            <h2>Sample</h2>
+            <p>HTML (HyperText Markup Language) is the code that is used 
+        to structure a web page and its content. For example, content
+        could be structured within a set of paragraphs, a list of 
+        bulleted points, or using images and data tables. As the title 
+        suggests
+        structure a web page and its content. For example, content
+        could be structured within a set of paragraphs, a list of 
+        bulleted points, or using images and data tables. As the title 
+        suggests
+        structure a web page and its content. For example, content
+        could be structured within a set of paragraphs, a list of 
+        bulleted points, or using images and data tables. As the title 
+        suggests
+        structure a web page and its content. For example, content
+        could be structured within a set of paragraphs, a list of 
+        bulleted points, or using images and data tables. As the title 
+        suggests</p>
+          </section>
+          <section id="html">
+            <h2>Learning HTML</h2>
+            <p>HTML (HyperText Markup Language) is the code that is used 
+        to structure a web page and its content. For example, content
+        could be structured within a set of paragraphs, a list of 
+        bulleted points, or using images and data tables. As the title 
+        suggests, this article will give you a basic understanding of 
+        HTML and its functions</p>
+          </section>
+          <section id="holiday">
+            <h2>Planning vacation</h2>
+            <img src="paris.jpg" width="350" height="220" alt="Paris image">
+              <p>Remembering Paris The most exciting adventure sally ever took 
+        was to the city of lights: Paris, France. She left on April 10, 
+        2001 and sally was sitting in row 15, seat B on American Airlines 
+        Flight 729 to Paris, France.... While visiting Paris, She saw 
+        many exciting places....</p>
+              <p>Paris is one of my favourite cities! I’m so in love with its 
+        museums, French cuisine and the city’s vibe. I’m pretty lucky 
+        Paris is only three hours away by train from Amsterdam. So,
+        I’m there quite often. However, recently, I was in Paris for
+        the first time on a solo trip.</p>
+            </section>
+            <hr>
+              <article id="contact">
+                <h2>Contact Me</h2>
+                <p>I would like to hear form you</p>
+                <form action="https://httpbin.org/get" method="get">
+                  <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="firstName">FirstName</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Type FirstName" autocomplete="on">
+                      <br>
+                        <br>
+                          <label for="last">LastName</label>
+                          <input type="text" name="lastname" id="last" placeholder="Type LastName">
+                            <br>
+                              <br>
+                                <label for="pass">Password</label>
+                                <input type="password" name="password" required id="pass">
+                                  <br>
+                                    <br>
+                                      <label for="phone">Phone No</label>
+                                      <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" name="phoneNo" id="phone" required placeHolder="987-5432-109">
+                                        <br>
+                                          <br>
+                                            <label for="decade">What's ur fac Decade?</label>
+                                            <input type="number" min="1998" max="2023" step="3" id="decade">
+                                              <br>
+                                                <br>
+        </fieldset>
+                                                <br>
+                                                  <br>
+                                                    <fieldset>
+                                                      <legend>Technical Skills</legend>
+                                                      <label for="language">Language</label>
+                                                      <select id="language" name="language">
+                                                        <optgroup label="Start Learning">
+                                                          <!--<option value="Backend">BackEnd LanguageS</option>-->
+                                                          <option value="Java">JAVA</option>
+                                                          <option value="JDBC">JDBC</option>
+                                                          <option value="Servlets">Servlets</option>
+                                                          <option value="Hibernate">Hibernate</option>
+                                                        </optgroup>
+                                                        <optgroup label="Start practising">
+                                                          <!--<option value="frontend">FrontEnd Language</option>-->
+                                                          <option value="HTML">HTML</option>
+                                                          <option value="CSS">CSS</option>
+                                                          <option value="JS">JAVA SCRIPT</option>
+                                                          <option value="node JS">Node Js</option>
+                                                        </optgroup>
+                                                      </select>
+                                                      <br>
+                                                        <br>
+                                                          <label for="content">Favourite Language</label>
+                                                          <input type="text" name="choose" id="content" list="content-list">
+                                                            <datalist id="content-list">
+                                                              <option value="Java">
+                                                                <option value="Spring">
+                                                                  <option value="HTML">
+                                                                    <option value="Css">
+      
+      </datalist>
+                                                                    <br>
+                                                                      <br>
+      </fieldset>
+                                                                      <br>
+                                                                        <br>
+                                                                          <!--<input type="image" alt="image" src="submit.jpg" width="48" height="48">-->
+                                                                          <fieldset>
+                                                                            <legend>Area Of Interest</legend>
+                                                                            <input type="radio" name="Backend" value="developer" id="backend">
+                                                                              <label for="backend">BackEnd Developer</label>
+                                                                              <br>
+                                                                                <input type="radio" value="FrontEnd Developer" name="FrontEnd" id="frontend">
+                                                                                  <label for="frontend">Front End Developer</label>
+                                                                                  <br>
+                                                                                    <input type="radio" value="Java Developer" name="java" id="java">
+                                                                                      <label for="java">Java Developer</label>
+                                                                                    </fieldset>
+                                                                                    <br>
+                                                                                      <br>
+                                                                                        <fieldset>
+                                                                                          <legend>Desire in my life </legend>
+                                                                                          <input type="checkbox" name="travelling" id="desires">
+                                                                                            <label for="desires">Explore the word by Travelling</label>
+                                                                                            <br>
+                                                                                              <input type="checkbox" name="paris" id="visit">
+                                                                                                <label for="visit">Visit Paris</label>
+                                                                                                <br>
+                                                                                                  <input type="checkbox" name="TajMahal" id="wish">
+                                                                                                    <label for="wish">Visit Taj Mahal</label>
+                                                                                                  </fieldset>
+                                                                                                  <br>
+                                                                                                    <br>
+                                                                                                      <fieldset>
+                                                                                                        <legend>Final Notes</legend>
+                                                                                                        <label for="message">Your Message</label>
+                                                                                                        <p>
+                                                                                                          <textarea placeholder="type ur message" style="color:red" id="message" rows="10" cols="75">
+      </textarea>
+                                                                                                        </p>
+                                                                                                      </fieldset>
+                                                                                                      <button type="submit" value="Submit">Submit</button>
+                                                                                                      <button type="reset">Reset</button>
+                                                                                                      <br>
+                                                                                                        <input type="submit" value="submit as Post method" formaction="https://httpbin.org/post" formmethod="post">
+        </form>
+                                                                                                      </article>
+                                                                                                      <footer>
+                                                                                                        <a href="#">Back To Top</a>
+                                                                                                      </footer>
+                                                                                                    </body>
+                                                                                                  </html>
